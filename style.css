@@ -1,21 +1,59 @@
 img {
 	width: 100vw;
 }
-
 #wrapper {
     background: #fff;
     width: 25vw;
     float: left;
 		margin: 20px;
     }
-
 #wrapper2 {
     background: #fff;
     width: 75vw;
     float: right;
 	}
 .product-box {
+	position: relative;
 	height: 150px;
 	width:300px;
 	background: grey;
+	margin-top: 10px;
+}
+.updated-tag{
+	height: 20px;
+	width: 80px;
+	background: #f49500;
+	float: right;
+	margin-top: 10px;
+	text-align: center;
+	color: white;
+}
+.pump-name{
+	float: left;
+	margin-top: 10px;
+}
+i{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.download-button{
+	float: right;
+	margin-right: 40px;
+	margin-top: 10px;
+	padding: 10px 20px;
+	width: auto;
+	border-radius: 25px;
+	background: #11497b;
+	color: white;
+
+}
+.section-latest{
+	margin-top: 60px;
+}
+.favorite{
+	height: auto;
+	padding: 20px;
+	margin: 20px;
+	margin-bottom: 50px;
 }
