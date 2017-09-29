@@ -9,6 +9,14 @@
 </head>
 <body>
 	<img src="./img/header.png">
+  <aside id="wrapper">
+<h3>LATEST PURCHASES</h3>
+<div class="product-box">
+</div>
+</aside>
+<main id="wrapper2">
+
+</main>
 </body>
 <img src="./img/footer.png">
 </html>
