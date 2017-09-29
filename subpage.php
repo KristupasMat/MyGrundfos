@@ -10,7 +10,7 @@
     <body>
         <img class="header" src="./img/header.png">
         <h2>Alpha2 l 25-40 130</h2>
-        <main>
+        <main class="subNumber1">
             <div class="imgBackground">
                 <img id="alpha1" src="img/ALPHA1.png" alt="Alpha 1">
             </div>

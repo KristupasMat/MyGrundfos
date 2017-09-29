@@ -13,7 +13,7 @@ img.header, img.footer {
     width: 100vw;
 }
 /* Styles of sections: image div and information section. USing Css Grids */
-main {
+main.subNumber1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #f5f5f5;
@@ -43,7 +43,7 @@ div.keyPoints ul {
     padding: 5%;
 }
 /* Styles for downloading marketing material */
-form {
+div.donwloadMM form {
     padding: 5%;
     background-color: #f5f5f5;
 }
@@ -68,7 +68,7 @@ div.downloadMM form div {
     float: right;
 }
 
-label {
+div.search-form label {
 	display: inline-block;
 	color: #333;
 	font-size: 12px;
@@ -77,7 +77,7 @@ label {
 	font-family: "Lucida Grande",Tahoma,Geneva,Verdana,sans-serif;
 	box-sizing: border-box;
 }
-label h2{
+div.search-form label h2{
 	margin-bottom: 5px;
 	font-size: 12px;
 	font-weight: normal;
