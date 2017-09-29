@@ -52,7 +52,7 @@ div.downloadMM form div {
 #wrapper {
     background: #fff;
     width: 25%;
-    float: left;
+    float: left;}
 
 #wrapper2 {
     background: #fff;
@@ -60,8 +60,23 @@ div.downloadMM form div {
     margin: 1.6% 0;
     float: right;
 
-}
 
+	}
+.product-box {
+ 	position: relative;
+ 	height: 150px;
+ 	width:300px;
+ 	background: grey;
+ 	margin-top: 10px;
+ }
+ .updated-tag{
+ 	height: 20px;
+ 	width: 80px;
+ 	background: #f49500;
+ 	float: right;
+ 	margin-top: 10px;
+ 	text-align: center;
+}
 div.search-form label {
 	display: inline-block;
 	color: #333;
@@ -113,8 +128,24 @@ div.search-form label h2{
 .search-btn:hover{
 	background-color: #0068b4;
 }
-
-
+.pump-name{
+ 	float: left;
+ 	margin-top: 10px;
+ }
+ i{
+ 	position: absolute;
+ 	bottom: 10px;
+ 	right: 10px;
+ }
+ .download-button{
+ 	float: right;
+ 	margin-right: 40px;
+ 	margin-top: 10px;
+ 	padding: 10px 20px;
+ 	width: auto;
+ 	border-radius: 25px;
+ 	background: #11497b;
+}
 #notification{
 	width: 10%;
 	color: white;
