@@ -1,3 +1,51 @@
-img {
-	width: 100vw;
+html {
+    background-color: #f5f5f5;
 }
+img.header, img.footer {
+    width: 100vw;
+}
+/* Styles of sections: image div and information section. USing Css Grids */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f5f5f5;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+div.imgBackground {
+    background-color: white;
+    width: 100%;
+    display: grid;
+}
+img#alpha1 {
+    width: 60%;
+    justify-self: center;
+}
+section.information {
+    background-color: #d6d6d6;
+    border: 1px solid #d6d6d6;
+}
+/* Styles of divs inside the information css */
+section.information h4{
+    text-transform: uppercase;
+    padding: 3%;
+}
+div.keyPoints ul {
+    background-color: #f5f5f5;
+    padding: 5%;
+}
+/* Styles for downloading marketing material */
+form {
+    padding: 5%;
+    background-color: #f5f5f5;
+}
+
+div.downloadMM form div {
+    background-color: #c9c9c9;
+    border: 1px solid #f5f5f5;
+}
+
+
+
+
+
