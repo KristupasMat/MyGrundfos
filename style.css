@@ -1,3 +1,4 @@
+
 html {
     background-color: #f5f5f5;
 }
@@ -46,6 +47,21 @@ div.downloadMM form div {
 }
 
 
+#wrapper {
+    background: #fff;
+    width: 25vw;
+    float: left;
+		margin: 20px;
+    }
 
-
+#wrapper2 {
+    background: #fff;
+    width: 75vw;
+    float: right;
+	}
+.product-box {
+	height: 150px;
+	width:300px;
+	background: grey;
+}
 
