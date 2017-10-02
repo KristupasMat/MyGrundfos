@@ -17,34 +17,37 @@
 <div id="container">
   <aside id="wrapper">
       
+      <section class="component component component-pagetitle">
+      <h1><b>MyGrundfos</b></h1>
+      </section>
       <ul class="nav left-nav">
-                    <li>
-                        <a href="#" class="links">Dashboard</a>
+                    <li class="links">
+                        Dashboard
                     </li> 
                 </ul>
-                <h1>Tools</h1>
+                <h1><b>Tools</b></h1>
                 <div class="nav">
                 <ul class="nav left-nav">    
-                    <li>
-                        <a href="#" class="links">Spare parts finder</a>
+                    <li class="links1">
+                        Spare parts finder
                     </li>   
-                    <li>
-                        <a href="#" class="links">Pump replacement</a>
+                    <li class="links1">
+                        Pump replacement
                     </li>       
-                    <li>
-                        <a href="#" class="links">Quotations</a>
+                    <li class="links1">
+                        Quotations
                     </li>        
-                    <li>
-                        <a href="#" class="links">Order status</a>
+                    <li class="links1">
+                        Order status
                     </li>         
-                    <li>
-                        <a href="#" class="links">List price finder</a>
+                    <li class="links1">
+                        List price finder
                     </li>        
-                    <li>
-                        <a href="#" class="links">Availability</a>
+                    <li class="links1">
+                        Availability
                     </li>   
-                    <li>
-                        <a href="#" class="links">Marketing materials</a>
+                    <li class="links1">
+                        Marketing materials
                     </li> 
                 </ul>
     </div>
