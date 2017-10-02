@@ -66,22 +66,25 @@ div.downloadMM form div {
  	position: relative;
  	height: 150px;
  	width:300px;
- 	background: grey;
+ 	background: white;
  	margin-top: 10px;
+    border: 1px solid #c9c9c9;
  }
 .favorite-box {
  	position: relative;
  	height: 125px;
  	width:250px;
- 	background: grey;
+ 	background: white;
  	margin-top: 10px;
+    border: 1px solid #c9c9c9;
  }
  .updated-tag{
  	height: 20px;
  	width: 80px;
  	background: #f49500;
- 	float: right;
- 	margin-top: 10px;
+ 	position: absolute;
+    top: 10px;
+    right: 0px;
  	text-align: center;
     color: white;
 }
@@ -257,6 +260,17 @@ ul nav left.nav h2 {
 }
 .fav{
     margin-right: 37px;
+}
+
+.favorite img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-box img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

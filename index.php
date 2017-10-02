@@ -53,6 +53,7 @@
 
 <section>
 <div class="product-box">
+    <img src="img/ALPHA1.png" width="auto" height="150px">
 <div class="updated-tag">
   UPDATED
 </div>
@@ -64,6 +65,7 @@
 
 <section class="section-latest">
 <div class="product-box">
+    <img src="img/alpha2.jpg" width="auto" height="150px">
 <div class="updated-tag">
   UPDATED
 </div>
@@ -75,7 +77,7 @@
 
 <section class="section-latest">
 <div class="product-box">
-
+<img src="img/alpha3.jpg" width="auto" height="150px">
 <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
 </div>
 <p class="pump-name">ALPHA 3</p>
@@ -95,10 +97,10 @@
 <div class="favorite-row">
   <section class="favorite">
   <div class="favorite-box">
+      <img src="img/ALPHA1.png" width="auto" height="125px">
   <div class="updated-tag">
     UPDATED
   </div>
-  <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
   </div>
   <p class="pump-name">ALPHA 1</p>
   <button type="button" class="download btn fav">DOWNLOAD</button>
@@ -106,23 +108,20 @@
         
           <section class="favorite">
   <div class="favorite-box">
+      <img src="img/alpha2.jpg" width="auto" height="125px">
   <div class="updated-tag">
     UPDATED
   </div>
-  <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
   </div>
-  <p class="pump-name">ALPHA 1</p>
+  <p class="pump-name">ALPHA 2</p>
   <button type="button" class="download btn fav">DOWNLOAD</button>
   </section>
         
           <section class="favorite">
   <div class="favorite-box">
-  <div class="updated-tag">
-    UPDATED
+      <img src="img/alpha3.jpg" width="auto" height="125px">
   </div>
-  <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
-  </div>
-  <p class="pump-name">ALPHA 1</p>
+  <p class="pump-name">ALPHA 3</p>
   <button type="button" class="download btn fav">DOWNLOAD</button>
   </section>
         </div>
