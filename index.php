@@ -59,7 +59,7 @@
 <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
 </div>
 <p class="pump-name">ALPHA 1</p>
-<button type="button" class="download-button">DOWNLOAD</button>
+<button type="button" class="download btn">DOWNLOAD</button>
 </section>
 
 <section class="section-latest">
@@ -70,7 +70,7 @@
 <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
 </div>
 <p class="pump-name">ALPHA 2</p>
-<button type="button" class="download-button">DOWNLOAD</button>
+<button type="button" class="download btn">DOWNLOAD</button>
 </section>
 
 <section class="section-latest">
@@ -79,7 +79,7 @@
 <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
 </div>
 <p class="pump-name">ALPHA 3</p>
-<button type="button" class="download-button">DOWNLOAD</button>
+<button type="button" class="download btn">DOWNLOAD</button>
 </section>
 </aside>
 	<main id="wrapper2">
@@ -89,7 +89,7 @@
 		<label><h2>Search for marketing materials:</h2></label>
 		<form>
 			 <input type="text" class="search-input" name="product">
-			 <input class="search-btn" type="submit" id="find-materials" value="SEARCH">
+			 <input class="btn" type="submit" id="find-materials" value="SEARCH">
 		</form>
 	</div>
 
@@ -101,7 +101,7 @@
   <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
   </div>
   <p class="pump-name">ALPHA 1</p>
-  <button type="button" class="download-button">DOWNLOAD</button>
+  <button type="button" class="download btn">DOWNLOAD</button>
   </section>
 
   <!-- Search form for adding products to favourites -->
@@ -109,7 +109,7 @@
 		<label><h2>Find a product you would like to add to your favourites:</h2></label>
 		<form>
 			 <input type="text" class="search-input" name="product">
-			 <input class="search-btn" type="submit" id="add-product" value="ADD PRODUCT TO FAVOURITES">
+			 <input class="btn" type="submit" id="add-product" value="ADD PRODUCT TO FAVOURITES">
 		</form>
         </div></main>
 </div>

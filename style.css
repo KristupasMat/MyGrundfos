@@ -110,7 +110,7 @@ div.search-form label h2{
 	border: solid 1px black;
 	outline: none;
 }
-.search-btn{
+.btn{
 	font-family: "Lucida Grande",Tahoma,Geneva,Verdana,sans-serif;
     font-size: 13px;
     font-weight: bold;
@@ -125,7 +125,7 @@ div.search-form label h2{
 	display: inline-block;
 	box-sizing: border-box;
 }
-.search-btn:hover{
+.btn:hover{
 	background-color: #0068b4;
 }
 .pump-name{
@@ -137,14 +137,12 @@ div.search-form label h2{
  	bottom: 10px;
  	right: 10px;
  }
- .download-button{
+ .download{
  	float: right;
  	margin-right: 40px;
  	margin-top: 10px;
  	padding: 10px 20px;
  	width: auto;
- 	border-radius: 25px;
- 	background: #11497b;
 }
 #notification{
 	width: 10%;
@@ -225,6 +223,10 @@ ul nav left.nav h1 {
 
 ul nav left.nav h2 {
     font-size: 22px;
+}
+
+.section-latest{
+    margin-top: 60px;
 }
 
 
