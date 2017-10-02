@@ -69,6 +69,13 @@ div.downloadMM form div {
  	background: grey;
  	margin-top: 10px;
  }
+.favorite-box {
+ 	position: relative;
+ 	height: 125px;
+ 	width:250px;
+ 	background: grey;
+ 	margin-top: 10px;
+ }
  .updated-tag{
  	height: 20px;
  	width: 80px;
@@ -76,6 +83,7 @@ div.downloadMM form div {
  	float: right;
  	margin-top: 10px;
  	text-align: center;
+    color: white;
 }
 div.search-form label {
 	display: inline-block;
@@ -139,7 +147,7 @@ div.search-form label h2{
  }
  .download{
  	float: right;
- 	margin-right: 40px;
+ 	
  	margin-top: 10px;
  	padding: 10px 20px;
  	width: auto;
@@ -229,7 +237,26 @@ ul nav left.nav h2 {
     margin-top: 60px;
 }
 
+.footer{
+    margin-top: 20px;
+}
 
+.favorite{
+    margin-bottom: 50px;
+    max-width: 250px;
+    display: table-cell;
+}
+.favorite:first-child{
+    margin-left: 0;
+}
 
+.favorite-row{
+    width: 100%;
+    display: table;
+    margin-bottom: 20px;
+}
+.fav{
+    margin-right: 37px;
+}
 
 

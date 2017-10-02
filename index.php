@@ -92,18 +92,40 @@
 			 <input class="btn" type="submit" id="find-materials" value="SEARCH">
 		</form>
 	</div>
-
+<div class="favorite-row">
   <section class="favorite">
-  <div class="product-box">
+  <div class="favorite-box">
   <div class="updated-tag">
     UPDATED
   </div>
   <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
   </div>
   <p class="pump-name">ALPHA 1</p>
-  <button type="button" class="download btn">DOWNLOAD</button>
+  <button type="button" class="download btn fav">DOWNLOAD</button>
   </section>
-
+        
+          <section class="favorite">
+  <div class="favorite-box">
+  <div class="updated-tag">
+    UPDATED
+  </div>
+  <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+  </div>
+  <p class="pump-name">ALPHA 1</p>
+  <button type="button" class="download btn fav">DOWNLOAD</button>
+  </section>
+        
+          <section class="favorite">
+  <div class="favorite-box">
+  <div class="updated-tag">
+    UPDATED
+  </div>
+  <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+  </div>
+  <p class="pump-name">ALPHA 1</p>
+  <button type="button" class="download btn fav">DOWNLOAD</button>
+  </section>
+        </div>
   <!-- Search form for adding products to favourites -->
   <div class="search-form">
 		<label><h2>Find a product you would like to add to your favourites:</h2></label>
