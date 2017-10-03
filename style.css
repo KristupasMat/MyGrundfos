@@ -173,7 +173,6 @@ div.addFav img {
     margin: 1.6% 0;
     float: right;
 }
-<<<<<<< HEAD
 .product-box {
     position: relative;
     height: 150px;
@@ -228,6 +227,10 @@ div.addFav img {
     border: 1px solid #c9c9c9;
  }
 
+ #product4 {
+    display: none;
+}
+
  .updated-tag{
  	font-size: 0.7em;
  	height: 20px;
@@ -241,6 +244,25 @@ div.addFav img {
     color: white;
 }
 
+/* Styling for buttons */
+.btn{
+    font-family: "Lucida Grande",Tahoma,Geneva,Verdana,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color: white;
+    background-color: #3386c3;
+    border: none;
+    padding: 6px 12px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.btn:hover{
+    background-color: #0068b4;
+}
 .remove-btn {
 	width: 30px;
 	height: 30px;
@@ -250,15 +272,14 @@ div.addFav img {
     background-color: #dd0028;
     border: none;
 }
-
 .remove-btn img {
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 30px;
-	height: 30px;
+	padding: 5px;
+    width: 20px;
+    height: 20px;
 }
-
 .add-favorite-btn {
 	width: 30px;
 	height: 30px;
@@ -268,13 +289,25 @@ div.addFav img {
     background-color: #b5d140;
     border: none;
 }
-
 .add-favorite-btn img {
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 30px;
-	height: 30px;
+    padding: 5px;
+	width: 20px;
+	height: 20px;
+}
+.secondary-btn {
+    background-color: #6eb556;
+}
+.secondary-btn:hover {
+    background-color: #4aa22c;
+}
+.functional-btn {
+    background-color: #999999;
+}
+.functional-btn:hover {
+    background-color: #727272;
 }
 
 /* Hides delete buttons, when product is not in favourites and cannot be deleted */
@@ -301,6 +334,23 @@ div.search-form label h2{
     padding: 20px;
     border: solid 1px #c9c9c9;
 }
+.ui-menu-item {
+    width: 35%;
+    padding: 6px 12px;
+    list-style: none;
+    color: #727272;
+    cursor: pointer;
+    background-color: white;
+    border: solid 1px #c9c9c9;
+    box-sizing: border-box;
+}
+.ui-menu-item:nth-child(2) {
+    border-top: none;
+    border-bottom: none;
+}
+.ui-menu-item:hover {
+    background-color: #a4a4a4;
+}
 .search-input {
     width: 65%;
     font-size: 14px;
@@ -313,27 +363,6 @@ div.search-form label h2{
 .search-input:focus {
     border: solid 1px black;
     outline: none;
-}
-
-/* Styling for buttons */
-.btn{
-	font-family: "Lucida Grande",Tahoma,Geneva,Verdana,sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    color: white;
-    background-color: #3386c3;
-    border: none;
-    padding: 6px 12px;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-.btn:hover{
-	background-color: #0068b4;
 }
 
 .pump-name{
@@ -375,12 +404,12 @@ i{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #3386c3;
+    background-color: #6eb556;
     padding: 20px;
     display: none;
 }
 #notification:hover{
-    background-color: #0068b4;
+    background-color: #4aa22c;
 }
 #notification a{
     color: white;
@@ -435,7 +464,6 @@ i{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 20px;
-
 }
 
 .favorite img{
