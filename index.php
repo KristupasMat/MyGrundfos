@@ -54,7 +54,7 @@
 <div class="latest-purchases">
 	<div class="product" id="latest-product1">
 		<div class="product-box">
-			<img src="img/Alpha1L.jpg" width="auto" height="160px">
+			<a href="subpage4.php"><img src="img/Alpha1L.jpg" width="auto" height="160px"></a>
 			<div class="updated-tag">
 				UPDATED
 			</div>
@@ -70,7 +70,7 @@
 	</div>
 	<div class="product" id="latest-product2">
 		<div class="product-box">
-			<img src="img/CMBE.jpg" width="auto" height="160px">
+			<a href="subpage5.php"><img src="img/CMBE.jpg" width="auto" height="160px"></a>
 			<div class="updated-tag">
 				UPDATED
 			</div>
@@ -86,7 +86,7 @@
 	</div>
 	<div class="product" id="latest-product3">
 		<div class="product-box">
-			<img src="img/CMB-PM1.jpg" width="auto" height="160px">
+			<a href="subpage6.php"><img src="img/CMB-PM1.jpg" width="auto" height="160px"></a>
 			<button class="add-favorite-btn functional-btn" id="add-product3">
 				<img src="./img/favorite-icon.svg">	
 			</button>
@@ -112,12 +112,12 @@
 <div class="favorite-row">
 	<div class="favorite" id="product1">
 		<div class="favorite-box">
-			<img src="img/ALPHA1.png" width="auto" height="160px">
-			<div class="updated-tag">
+			<a href="subpage.php" id="product1-link"><img src="img/ALPHA1.png" width="auto" height="160px"></a>
+			<div class="updated-tag" id="product1-tag">
 				UPDATED
 			</div>
 			<button class="remove-btn functional-btn" id="delete-favorite-product1">
-				<img src="./img/delete-icon.svg">	
+				<img src="./img/delete-icon.svg">
 			</button>
 			<p class="pump-name">ALPHA 1</p>
 			<button type="button" class="download btn fav secondary-btn" onclick="openPopup()">DOWNLOAD</button>
@@ -125,7 +125,7 @@
 	</div>
 	<div class="favorite" id="product2">
 		<div class="favorite-box">
-			<img src="img/alpha2.jpg" width="auto" height="160px">
+			<a href="subpage2.php"><img src="img/alpha2.jpg" width="auto" height="160px"></a>
 			<div class="updated-tag">
 				UPDATED
 			</div>
@@ -138,7 +138,7 @@
 	</div>
   	<div class="favorite" id="product3">
 		<div class="favorite-box">
-			<img src="img/alpha3.jpg" width="auto" height="160px">
+			<a href="subpage3.php"><img src="img/alpha3.jpg" width="auto" height="160px"></a>
 			<button class="remove-btn functional-btn" id="delete-favorite-product3">
 				<img src="./img/delete-icon.svg">	
 			</button>
@@ -148,7 +148,7 @@
 	</div>
 	<div class="favorite" id="product4">
 		<div class="favorite-box">
-			<img src="img/Magna1.png" width="auto" height="160px">
+			<a href="subpage4.php"><img src="img/Magna1.png" width="auto" height="160px"></a>
 			<button class="remove-btn functional-btn" id="delete-favorite-product3">
 				<img src="./img/delete-icon.svg">	
 			</button>
@@ -169,15 +169,73 @@
 </div>
 
 <!-- Section that will hold the notificaition message -->
-<a href="#">
-	<div id="notification">
-		<h2>New feature available!</h2>
-		<p>Use the newly updated marketing materials module to promote your products and increse your sales.</p>
+<div id="notification">
+	<div onclick="closeNotification()">
+		<img src="./img/close-icon.svg" id="close-notification">
 	</div>
-</a>
+	<h2>New feature available!</h2>
+	<p>Use the newly updated marketing materials module to promote your products and increse your sales.</p>
+</div>
+
 <img src="./img/footer.png" class="footer">
 <div id="overlay" onclick="closePopup()"></div>
 <div id="popup">
+	<section class="information">
+	        <div class="keyPoints">
+	            <h4>Key selling points:</h4>
+	            <ul>
+	                <li>Highly flexible</li>
+	                <li>Low energy consumption</li>
+	                <li>One Touch operation enables simple set up</li>
+	                <div class="hiddenKeys" style="display:none;">
+	                    <li>Power usage LED display</li>
+	                    <li>Backward compatible with older Grundfos circulator housings</li>
+	                    <li>Plug & Pump – no need to open terminal box </li>
+	                </div>
+	                <button class="keyDropDown"><img src="img/caret-down.png" alt="caret down icon"></button>
+	            </ul>
+
+	        </div>
+	        <h4>Download marketing materials:</h4>
+	        <div class="downloadMM">
+	            <form>
+	                <div class="imgDrop">
+	                    <input type="image" name="material" id="images" src="img/caret-down.png" onclick="event.preventDefault()">
+	                    <label for="images">Images</label>
+	                </div>
+	                <div class="imgDropBox" style="display:none;">
+	                    <input type="checkbox" name="material" id="web" value="web">
+	                    <label for="web">Web</label><br>
+	                    <input type="checkbox" name="material" id="print" value="print">
+	                    <label for="print">Print</label>
+	                </div>
+	                <div>
+	                    <input type="checkbox" name="material" id="webBanners" value="webBanners">
+	                    <label for="webBanners">Web banners</label>
+	                </div>
+	                <div>      
+	                    <input type="checkbox" name="material" id="selectAll" value="selectAll">
+	                    <label for="selectAll">Select all</label>
+	                </div>
+	            </form>
+	            <p>Donwload size: <span id="sub1Count">0</span> mb</p>
+	            <button class="downloadFiles"><span>download</span></button>
+	        </div>
+	        <div class="emailMe">
+	            <div class="emailInput"> 
+	                <input type="checkbox" name="material" id="sendEmail" value="sendEmail">
+	                <label for="sendEmail">Send me e-mail when marketing materials for this product are uploaded</label>
+	            </div> 
+	            <button><span>SAVE</span></button>
+	        </div>
+	        <div class="addFav">
+	            <div>
+	                <p>Add product to favourite section</p>
+	                <img src="img/square-add-button.png" alt="add button">
+	            </div>
+	        </div>
+	    </section> 
+</div>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="scripts/script.js"></script>
