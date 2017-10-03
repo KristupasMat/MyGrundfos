@@ -1,4 +1,15 @@
 $(document).ready(function(){
+    $('input#selectAll').click(function(){
+        if($('input#selectAll').is(':checked') ){
+            $('input#web').prop('checked', true);
+            $('input#print').prop('checked', true);
+            $('input#webBanners').prop('checked', true);
+        } else {
+            $('input#web').prop('checked',false);
+            $('input#print').prop('checked', false);
+            $('input#webBanners').prop('checked', false);
+        }
+    });
     $('input[type=checkbox]').click(function(e){
         if ($('input#web').is(':checked') && !$('input#print').is(':checked') && !$('input#webBanners').is(':checked')) {
             $('#sub1Count').text('3');
@@ -175,8 +186,8 @@ function showMore2(){
 }
 keyButton.addEventListener('click', showMore);
 imgDrop.addEventListener("click", showMore2);
-    // Bring up the popup and overlay when download button is clicked
-    function openPopup() {
+// Bring up the popup and overlay when download button is clicked
+function openPopup() {
     var popup = document.getElementById("popup");
     var overlay = document.getElementById("overlay");
     popup.style.display = "block";
