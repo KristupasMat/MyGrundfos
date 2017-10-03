@@ -9,42 +9,47 @@
 </head>
 <body>
 <img src="./img/header.png" class="header">
+    
+  <!-- Setting a wrapper that would include the tools and the latest purchases part -->
+    
 <div id="container">
   <aside id="wrapper">
-        <section class="component component-pagetitle">
-      		<h1><b>MyGrundfos</b></h1>
-        </section>
-      	<ul class="nav left-nav">
-            <li class="links">
-                Dashboard
-            </li> 
-        </ul>
-        <h1><b>Tools</b></h1>
-        <div class="nav">
-		    <ul class="nav left-nav">    
-		        <li class="links1">
-		            Spare parts finder
-		        </li>   
-		        <li class="links1">
-		            Pump replacement
-		        </li>       
-		        <li class="links1">
-		            Quotations
-		        </li>        
-		        <li class="links1">
-		            Order status
-		        </li>         
-		        <li class="links1">
-		            List price finder
-		        </li>        
-		        <li class="links1">
-		            Availability
-		        </li>   
-		        <li class="links1">
-		            Marketing materials
-		        </li> 
-		    </ul>
-		</div>
+	 <!-- Beginning of the Tools section -->
+    <section class="component component-pagetitle">
+  		<h1><b>MyGrundfos</b></h1>
+    </section>
+    <!--Listing the items-->
+  	<ul class="nav left-nav">
+        <li class="links">
+            Dashboard
+        </li> 
+    </ul>
+    <h1><b>Tools</b></h1>
+    <div class="nav">
+	    <ul class="nav left-nav">    
+	        <li class="links1">
+	            Spare parts finder
+	        </li>   
+	        <li class="links1">
+	            Pump replacement
+	        </li>       
+	        <li class="links1">
+	            Quotations
+	        </li>        
+	        <li class="links1">
+	            Order status
+	        </li>         
+	        <li class="links1">
+	            List price finder
+	        </li>        
+	        <li class="links1">
+	            Availability
+	        </li>   
+	        <li class="links1">
+	            Marketing materials
+	        </li> 
+	    </ul>
+	</div>
 <h3>LATEST PURCHASES</h3>
 <div class="latest-purchases">
 	<div class="product" id="latest-product1">
