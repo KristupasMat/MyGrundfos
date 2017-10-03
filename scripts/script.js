@@ -6,6 +6,7 @@ var moreImage = document.querySelector(".imgDropBox");
 function showMore(){
     if (hiddenKeys.style.display == "none"){
         hiddenKeys.style.display = "block";
+        
     } else {
         hiddenKeys.style.display = "none";
     }
