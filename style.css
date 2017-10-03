@@ -458,6 +458,8 @@ i{
     margin-right: auto;
 }
 
+<!-- styling of the aside menu-->
+
 .aside-menu {
     display: inline-block;
     padding-left: 80px;
@@ -474,6 +476,8 @@ section.component-pagetitle {
 section.component-pagetitle h1 {
     font-size: 22px;
 }
+
+<!-- Styling the li elements -->
 
 .links {
     display: block;

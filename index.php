@@ -14,12 +14,20 @@
 </head>
 <body>
 <img src="./img/header.png" class="header">
+    
+  <!-- Setting a wrapper that would include the tools and the latest purchases part -->
+    
 <div id="container">
   <aside id="wrapper">
+      
+      <!-- Beginning of the Tools section -->
       
       <section class="component component component-pagetitle">
       <h1><b>MyGrundfos</b></h1>
       </section>
+      
+      <!--Listing the items-->
+      
       <ul class="nav left-nav">
                     <li class="links">
                         Dashboard
