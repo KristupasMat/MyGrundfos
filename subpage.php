@@ -21,41 +21,62 @@
                         <li>Highly flexible</li>
                         <li>Low energy consumption</li>
                         <li>One Touch operation enables simple set up</li>
+                        <div class="hiddenKeys" style="display:none;">
+                            <li>Power usage LED display</li>
+                            <li>Backward compatible with older Grundfos circulator housings</li>
+                            <li>Plug & Pump – no need to open terminal box </li>
+                        </div>
+                        <button class="keyDropDown"><img src="img/caret-down.png" alt="caret down icon"></button>
                     </ul>
+
                 </div>
+                <h4>Download marketing materials:</h4>
                 <div class="downloadMM">
-                    <h4>Download marketing materials:</h4>
                     <form>
-                        <div>
-                            <input type="checkbox" name="material" id="images" value="images">
+                        <div class="imgDrop">
+                            <input type="image" name="material" id="images" src="img/caret-down.png" onclick="event.preventDefault()">
                             <label for="images">Images</label>
                         </div>
-                      
+                        <div class="imgDropBox" style="display:none;">
+                            <input type="checkbox" name="material" id="web" value="web">
+                            <label for="web">Web</label><br>
+                            <input type="checkbox" name="material" id="print" value="print">
+                            <label for="print">Print</label>
+                        </div>
                         <div>
                             <input type="checkbox" name="material" id="webBanners" value="webBanners">
                             <label for="webBanners">Web banners</label>
                         </div>
-                     
+
                         <div>
                             <input type="checkbox" name="material" id="instaVid" value="instaVid">
                             <label for="instaVid">Installation videos</label>
                         </div>
-                       
+
                         <div>      
                             <input type="checkbox" name="material" id="selectAll" value="selectAll">
                             <label for="selectAll">Select all</label>
                         </div>
                     </form>
                     <p>Donwload size: <span>0</span> mb</p>
-                    <button class="downloadFiles">download</button>
+                    <button class="downloadFiles"><span>download</span></button>
                 </div>
                 <div class="emailMe">
-                    <input type="checkbox" name="material" id="sendEmail" value="sendEmail">
-                    <label for="sendEmail">Send me e-mail when marketing materials for this product are uploaded</label>
+                    <div class="emailInput"> 
+                        <input type="checkbox" name="material" id="sendEmail" value="sendEmail">
+                        <label for="sendEmail">Send me e-mail when marketing materials for this product are uploaded</label>
+                    </div> 
+                    <button><span>SAVE</span></button>
                 </div>
-                <div class="addFav">Smth4</div>
+                <div class="addFav">
+                    <div>
+                        <p>Add product to favourite section</p>
+                        <img src="img/square-add-button.png" alt="add button">
+                    </div>
+                </div>
             </section>    
         </main>
+        <script src="scripts/script.js"></script>
     </body>
     <img class="footer" src="./img/footer.png">
 </html>
