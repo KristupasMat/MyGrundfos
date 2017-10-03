@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     </head>
     <body>
         <img class="header" src="./img/header.png">
-        <h2>Alpha2 l 25-40 130</h2>
+        <h2 class="subHeading">ALPHA1</h2>
         <main class="subNumber1">
             <div class="imgBackground">
                 <img id="alpha1" src="img/ALPHA1.png" alt="Alpha 1">
@@ -47,18 +49,12 @@
                             <input type="checkbox" name="material" id="webBanners" value="webBanners">
                             <label for="webBanners">Web banners</label>
                         </div>
-
-                        <div>
-                            <input type="checkbox" name="material" id="instaVid" value="instaVid">
-                            <label for="instaVid">Installation videos</label>
-                        </div>
-
                         <div>      
                             <input type="checkbox" name="material" id="selectAll" value="selectAll">
                             <label for="selectAll">Select all</label>
                         </div>
                     </form>
-                    <p>Donwload size: <span>0</span> mb</p>
+                    <p>Donwload size: <span id="sub1Count">0</span> mb</p>
                     <button class="downloadFiles"><span>download</span></button>
                 </div>
                 <div class="emailMe">

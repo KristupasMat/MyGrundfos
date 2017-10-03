@@ -14,6 +14,9 @@ img.header, img.footer {
     width: 100vw;
 }
 /* Styles of sections: image div and information section. USing Css Grids */
+h2.subHeading {
+   margin: 2% 15% 2% 15%;
+}
 main.subNumber1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,7 +32,7 @@ div.imgBackground {
     display: grid;
 }
 img#alpha1 {
-    width: 90%;
+    width: 70%;
     justify-self: center;
     align-self: center;
 }
@@ -466,7 +469,6 @@ i{
 .component-pagetitle {
     margin: 16px 0 12px 0;
 }
-
 section.component-pagetitle {
     display: block;
 }
