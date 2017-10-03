@@ -1,3 +1,4 @@
+/* Styling for container that holds everything in place */
 #container {
     max-width: 1200px;
     margin: 0 auto;
@@ -5,6 +6,9 @@
 
 html {
     background-color: #f5f5f5;
+}
+body{
+    font-family: "Lucida Grande", Tahoma, Geneva, Verdana, sans-serif;
 }
 img.header, img.footer {
     width: 100vw;
@@ -157,18 +161,19 @@ div.addFav img {
     justify-self: end;
 }
 /* Other styles ---- GUYS! Comments please! */
+
+/* Styling for wrapers that hold aside and main */
 #wrapper {
-    background: #fff;
     width: 25%;
     float: left;
 }
-
 #wrapper2 {
-    background: #fff;
+    
     width: 71.8%;
     margin: 1.6% 0;
     float: right;
 }
+<<<<<<< HEAD
 .product-box {
     position: relative;
     height: 150px;
@@ -184,6 +189,100 @@ div.addFav img {
     margin-top: 10px;
     text-align: center;
 }
+
+/* Styling for the popup */
+#popup {
+	display: none;
+	position: fixed;
+	width: 400px;
+	height: 500px;
+	margin-top: -250px;
+	margin-left: -200px;
+	background-color: red;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+}
+
+/* Styling for overlay that dims the website when popup comes out */
+#overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	z-index: 1;
+	background-color: black;
+}
+
+.product {
+	position: relative;
+}
+.favorite-box, .product-box{
+ 	position: relative;
+ 	height: auto;
+ 	width: 100%;
+ 	background: white;
+    border: 1px solid #c9c9c9;
+ }
+
+ .updated-tag{
+ 	font-size: 0.7em;
+ 	height: 20px;
+ 	line-height: 20px;
+ 	width: 80px;
+ 	background: #f49500;
+ 	position: absolute;
+    top: 15px;
+    right: 0px;
+ 	text-align: center;
+    color: white;
+}
+
+.remove-btn {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #dd0028;
+    border: none;
+}
+
+.remove-btn img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+}
+
+.add-favorite-btn {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #b5d140;
+    border: none;
+}
+
+.add-favorite-btn img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+}
+
+/* Hides delete buttons, when product is not in favourites and cannot be deleted */
+#delete-latest-product1, #delete-latest-product2, #delete-latest-product3 {
+	display: none;
+}
+
+/* Styling for search forms */
 div.search-form label {
     display: inline-block;
     color: #333;
@@ -198,12 +297,10 @@ div.search-form label h2{
     font-size: 12px;
     font-weight: normal;
 }
-
 .search-form{
     padding: 20px;
     border: solid 1px #c9c9c9;
 }
-
 .search-input {
     width: 65%;
     font-size: 14px;
@@ -217,8 +314,10 @@ div.search-form label h2{
     border: solid 1px black;
     outline: none;
 }
-.search-btn{
-    font-family: "Lucida Grande",Tahoma,Geneva,Verdana,sans-serif;
+
+/* Styling for buttons */
+.btn{
+	font-family: "Lucida Grande",Tahoma,Geneva,Verdana,sans-serif;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -232,9 +331,11 @@ div.search-form label h2{
     display: inline-block;
     box-sizing: border-box;
 }
-.search-btn:hover{
-    background-color: #0068b4;
+
+.btn:hover{
+	background-color: #0068b4;
 }
+
 .pump-name{
     float: left;
     margin-top: 10px;
@@ -252,7 +353,22 @@ i{
     width: auto;
     border-radius: 25px;
     background: #11497b;
+ 	float: left;
+ 	margin-top: 10px;
+ }
+ i{
+ 	position: absolute;
+ 	bottom: 10px;
+ 	right: 10px;
+ }
+ .download{
+ 	float: right;
+ 	margin-top: 10px;
+ 	padding: 6px 12px;
+ 	width: auto;
 }
+
+/* Styling for the notification box */
 #notification{
     width: 10%;
     color: white;
@@ -263,22 +379,18 @@ i{
     padding: 20px;
     display: none;
 }
-
 #notification:hover{
     background-color: #0068b4;
 }
-
 #notification a{
     color: white;
     text-decoration: none;
 }
-
 #notification h2{
     font-family: "Lucida Grande",Tahoma,Geneva,Verdana,sans-serif;
     font-size: 13px;
     font-weight: bold;
 }
-
 #notification p{
     font-family: "Lucida Grande",Tahoma,Geneva,Verdana,sans-serif;
     font-size: 12px;
@@ -286,6 +398,7 @@ i{
     margin-top: 10px;
 }
 
+/* Styling for page title */
 #main-heading {
     color: #333;
     line-height: 15px;
@@ -297,5 +410,116 @@ i{
     font-family: "Lucida Grande",Tahoma,Geneva,Verdana,sans-serif;
     font-size: 13px;
     font-weight: bold;
+	box-sizing: border-box;
+	margin-bottom: 0;
+}
+
+.section-latest{
+    margin-top: 60px;
+}
+
+.footer{
+    margin-top: 20px;
+}
+
+.favorite{
+    max-width: 100%;
+}
+
+.favorite-row {
+	height: auto;
+	padding: 20px;
+	border-left: solid 1px #c9c9c9;
+	border-right: solid 1px #c9c9c9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+
+}
+
+.favorite img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.latest-purchases {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    height: auto;
+    padding: 20px 0;
+}
+.product-box img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aside-menu {
+    display: inline-block;
+    padding-left: 80px;
+}
+
+.component-pagetitle {
+    margin: 16px 0 12px 0;
+}
+
+section.component-pagetitle {
+    display: block;
+}
+
+section.component-pagetitle h1 {
+    font-size: 22px;
+}
+
+.links {
+    display: block;
+    border-top-style: outset;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: solid 1px #c9c9c9;
+}
+
+.links1 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: solid 1px #c9c9c9;
+}
+
+
+
+h1 {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ul.left-nav li  {
+	font-size: 13px;
+    list-style-type: none;
+    line-height: 10px;
     box-sizing: border-box;
+    padding-left: 0;
+    color: #727272;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav li {
+    position: relative;
+    display: block;
+    
+}
+
+.nav{
+    margin-bottom: 20px;
+    font-family: "Tahoma";
+}
+
+li:hover{
+    background-color: white;
 }
