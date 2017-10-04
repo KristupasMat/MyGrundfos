@@ -18,7 +18,7 @@
             </div>
             <section class="information">
                 <div class="keyPoints">
-                    <h4>Key selling points:</h4>
+                    <h1 class="main-heading">KEY SELLING POINTS:</h4>
                     <ul>
                         <li>Highly flexible</li>
                         <li>Low energy consumption</li>
@@ -32,7 +32,7 @@
                     </ul>
 
                 </div>
-                <h4>Download marketing materials:</h4>
+                <h1 class="main-heading">DOWNLOAD MARKETING MATERIALS:</h1>
                 <div class="downloadMM">
                     <form>
                         <div class="imgDrop">
@@ -55,20 +55,19 @@
                         </div>
                     </form>
                     <p>Donwload size: <span id="sub1Count">0</span> mb</p>
-                    <button class="downloadFiles"><span>download</span></button>
+                    <button class="downloadFiles btn secondary-btn"><span>download</span></button>
                 </div>
                 <div class="emailMe">
                     <div class="emailInput"> 
                         <input type="checkbox" name="material" id="sendEmail" value="sendEmail">
                         <label for="sendEmail">Send me e-mail when marketing materials for this product are uploaded</label>
                     </div> 
-                    <button><span>SAVE</span></button>
+                    <button class="btn secondary-btn"><span>SAVE</span></button>
                 </div>
                 <div class="addFav">
-                    <div>
-                        <p>Add product to favourite section</p>
-                        <img src="img/square-add-button.png" alt="add button">
-                    </div>
+                     <button class="downloadFiles btn functional-btn">
+                        ADD PRODUCT TO FAVORITE SECTION
+                    </button>
                 </div>
             </section>    
         </main>

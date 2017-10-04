@@ -100,7 +100,7 @@
 </div>
 </aside>
 <main id="wrapper2">
-	<h1 id="main-heading">MARKETING MATERIALS</h1>
+	<h1 class="main-heading">MARKETING MATERIALS</h1>
 	<!-- Search form for marketing materials -->
 	<div class="search-form">
 		<label><h2>Search for marketing materials:</h2></label>
@@ -149,7 +149,7 @@
 	<div class="favorite" id="product4">
 		<div class="favorite-box">
 			<a href="subpage4.php"><img src="img/Magna1.png" width="auto" height="160px"></a>
-			<button class="remove-btn functional-btn" id="delete-favorite-product3">
+			<button class="remove-btn functional-btn" id="delete-favorite-product4">
 				<img src="./img/delete-icon.svg">	
 			</button>
 			<p class="pump-name">MAGNA1</p>
