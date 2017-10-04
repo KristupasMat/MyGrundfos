@@ -62,17 +62,7 @@ $(document).ready(function(){
             window.open('alphaDownload/web_banners.zip');
         }
     });
-
-
-    //Bring up the notification on any keypress
-    var notification = document.getElementById("notification");
-    window.addEventListener("keydown", function(e) {
-        var key = e.keyCode;
-        if (key === 69) {
-            notification.style.display ="block";
-        }
-    });
-
+    
     //Deletes product from favourites
     $( "#delete-favorite-product1" ).click(function() {
         var remove = document.getElementById("product1");
@@ -169,6 +159,7 @@ $(document).ready(function(){
         });
     });  
 });
+
 var keyButton = document.querySelector("button.keyDropDown");
 var hiddenKeys = document.querySelector("div.hiddenKeys");
 var imgDrop = document.querySelector(".imgDrop");
@@ -219,7 +210,6 @@ function redirectSearch() {
     };
 }
 
-
 // Adds products when using add product search bar
 function addProduct() {
     var searchRequest = document.getElementById("add-product").value;
@@ -251,3 +241,11 @@ function closeNotification(e) {
     var notification = document.getElementById("notification");
     notification.style.display = "none";
 }
+
+//Bring up the notification after few seconds
+setTimeout(function(){
+        var notification = document.getElementById("notification");
+        notification.style.display ="block";
+    }, 5000);
+
+
