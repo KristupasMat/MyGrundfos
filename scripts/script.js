@@ -246,12 +246,3 @@ function closeNotification(e) {
     var notification = document.getElementById("notification");
     notification.style.display = "none";
 }
-var updateTag = document.getElementById('product1-tag');
-var link = document.getElementById("product1-link");
-
-link.onchange = function() {
-    updateTag.style.display = 'none';
-    localStorage.setItem('updateTag', 'none');
-};
-updateTag.display = localStorage.getItem('updateTag');
-link.onchange(); 
