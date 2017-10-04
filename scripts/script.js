@@ -164,20 +164,24 @@ var keyButton = document.querySelector("button.keyDropDown");
 var hiddenKeys = document.querySelector("div.hiddenKeys");
 var imgDrop = document.querySelector(".imgDrop");
 var moreImage = document.querySelector(".imgDropBox");
-
+var caretDown = document.querySelector('button.keyDropDown img');
+var imagesCaret = document.querySelector('input[type=image]');
 function showMore(){
     if (hiddenKeys.style.display == "none"){
         hiddenKeys.style.display = "block";
-
+        caretDown.classList = 'flipArrow';
     } else {
         hiddenKeys.style.display = "none";
+        caretDown.classList.remove('flipArrow');
     }
 }
 function showMore2(){
     if (moreImage.style.display == "none"){
         moreImage.style.display = "block";
+        imagesCaret.classList = 'flipArrow';
     } else {
         moreImage.style.display = "none";
+         imagesCaret.classList.remove('flipArrow');
     }
 }
 keyButton.addEventListener('click', showMore);

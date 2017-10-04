@@ -11,6 +11,11 @@
     </head>
     <body>
         <img class="header" src="./img/header.png">
+        <ul class="breadcrumb alignBread">
+            <li><a href="#">Grundfos</a></li>
+            <li><a href="index.php">MyGrundfos</a></li>
+            <li>ALPHA_1</li>
+        </ul>
         <h2 class="subHeading">ALPHA1</h2>
         <main class="subNumber1">
             <div class="imgBackground">
