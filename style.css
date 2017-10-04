@@ -40,6 +40,9 @@ section.information {
     background-color: #dedede;
     border: 1px solid #d6d6d6;
 }
+section.information li {
+    margin-left: 20px;
+}
 /* Styles of divs inside the information css */
 section.information h4{
     text-transform: uppercase;
@@ -52,10 +55,14 @@ div.keyPoints ul {
 
 }
 button.keyDropDown {
-    background-color: #d6d6d6;
+    background-color: #999999;
     width: 100%;
     border: none;
     margin-top: 10px;
+    padding: 1px;
+}
+button.keyDropDown:hover {
+    background-color: #727272;
 }
 button.keyDropDown img {
     width: 20px;
@@ -81,7 +88,9 @@ input[type=image]{
     height: 12px;
     margin: 5px;
 }
-div.downloadMM input[type=checkbox] {background-color: #ffffff;/* color: white; */}
+div.downloadMM input[type=checkbox] {
+    background-color: #ffffff;/* color: white; */
+}
 /* End */
 div.downloadMM form div {
     background-color: #dedede;
@@ -526,10 +535,13 @@ ul.left-nav li  {
     text-decoration: none;
 }
 
+ul.left-nav li:hover{
+    background-color: white;
+}
+
 .nav li {
     position: relative;
     display: block;
-    
 }
 
 .nav{
@@ -537,6 +549,3 @@ ul.left-nav li  {
     font-family: "Tahoma";
 }
 
-li:hover{
-    background-color: white;
-}

@@ -58,7 +58,7 @@
 			<div class="updated-tag">
 				UPDATED
 			</div>
-			<button class="add-favorite-btn functional-btn" id="add-product1">
+			<button class="add-favorite-btn functional-btn" id="add-product1" onclick="moveProduct(this.id)">
 				<img src="./img/favorite-icon.svg">
 			</button>
 			<button class="remove-btn functional-btn" id="delete-latest-product1">
@@ -181,61 +181,74 @@
 <div id="overlay" onclick="closePopup()"></div>
 <div id="popup">
 	<section class="information">
-	        <div class="keyPoints">
-	            <h4>Key selling points:</h4>
-	            <ul>
-	                <li>Highly flexible</li>
-	                <li>Low energy consumption</li>
-	                <li>One Touch operation enables simple set up</li>
-	                <div class="hiddenKeys" style="display:none;">
-	                    <li>Power usage LED display</li>
-	                    <li>Backward compatible with older Grundfos circulator housings</li>
-	                    <li>Plug & Pump – no need to open terminal box </li>
-	                </div>
-	                <button class="keyDropDown"><img src="img/caret-down.png" alt="caret down icon"></button>
-	            </ul>
-
-	        </div>
-	        <h4>Download marketing materials:</h4>
-	        <div class="downloadMM">
-	            <form>
-	                <div class="imgDrop">
-	                    <input type="image" name="material" id="images" src="img/caret-down.png" onclick="event.preventDefault()">
-	                    <label for="images">Images</label>
-	                </div>
-	                <div class="imgDropBox" style="display:none;">
-	                    <input type="checkbox" name="material" id="web" value="web">
-	                    <label for="web">Web</label><br>
-	                    <input type="checkbox" name="material" id="print" value="print">
-	                    <label for="print">Print</label>
-	                </div>
-	                <div>
-	                    <input type="checkbox" name="material" id="webBanners" value="webBanners">
-	                    <label for="webBanners">Web banners</label>
-	                </div>
-	                <div>      
-	                    <input type="checkbox" name="material" id="selectAll" value="selectAll">
-	                    <label for="selectAll">Select all</label>
-	                </div>
-	            </form>
-	            <p>Donwload size: <span id="sub1Count">0</span> mb</p>
-	            <button class="downloadFiles"><span>download</span></button>
-	        </div>
-	        <div class="emailMe">
-	            <div class="emailInput"> 
-	                <input type="checkbox" name="material" id="sendEmail" value="sendEmail">
-	                <label for="sendEmail">Send me e-mail when marketing materials for this product are uploaded</label>
-	            </div> 
-	            <button><span>SAVE</span></button>
-	        </div>
-	        <div class="addFav">
-	            <div>
-	                <p>Add product to favourite section</p>
-	                <img src="img/square-add-button.png" alt="add button">
+	    <div class="keyPoints">
+	        <h1 class="main-heading">KEY SELLING POINTS:</h4>
+	        <ul>
+	            <li>Highly flexible</li>
+	            <li>Low energy consumption</li>
+	            <li>One Touch operation enables simple set up</li>
+	            <div class="hiddenKeys" style="display:none;">
+	                <li>Power usage LED display</li>
+	                <li>Backward compatible with older Grundfos circulator housings</li>
+	                <li>Plug & Pump – no need to open terminal box </li>
 	            </div>
-	        </div>
-	    </section> 
+	            <button class="keyDropDown"><img src="img/caret-down.png" alt="caret down icon"></button>
+	        </ul>
+
+	    </div>
+	    <h1 class="main-heading">DOWNLOAD MARKETING MATERIALS:</h1>
+	    <div class="downloadMM">
+	        <form>
+	            <div class="imgDrop">
+	                <input type="image" name="material" id="images" src="img/caret-down.png" onclick="event.preventDefault()">
+	                <label for="images">Images</label>
+	            </div>
+	            <div class="imgDropBox" style="display:none;">
+	                <input type="checkbox" name="material" id="web" value="web">
+	                <label for="web">Web</label><br>
+	                <input type="checkbox" name="material" id="print" value="print">
+	                <label for="print">Print</label>
+	            </div>
+	            <div>
+	                <input type="checkbox" name="material" id="webBanners" value="webBanners">
+	                <label for="webBanners">Web banners</label>
+	            </div>
+	            <div>      
+	                <input type="checkbox" name="material" id="selectAll" value="selectAll">
+	                <label for="selectAll">Select all</label>
+	            </div>
+	        </form>
+	        <p>Download size: <span id="sub1Count">0</span> mb</p>
+	        <button class="downloadFiles btn secondary-btn"><span>download</span></button>
+	    </div>
+	    <div class="emailMe">
+	        <div class="emailInput"> 
+	            <input type="checkbox" name="material" id="sendEmail" value="sendEmail">
+	            <label for="sendEmail">Send me e-mail when marketing materials for this product are uploaded</label>
+	        </div> 
+	        <button class="btn secondary-btn"><span>SAVE</span></button>
+	    </div>
+	</section>    
 </div>
+<script type="text/javascript">
+	function moveProduct(tag) {
+        var num = tag.charAt(11);
+        jQuery("#latest-product + num").detach().appendTo('.favorite-row');
+        var addBtn = document.getElementById("add-product + num");
+        var removeBtn = document.getElementById("delete-latest-product + num");
+        addBtn.style.display = "none";
+        removeBtn.style.display = "block";
+    }
+
+    function moveProductBack(tag) {
+        var num = tag.charAt(11);
+        jQuery("#latest-product + num").detach().appendTo('.latest-purchases');
+        var addBtn = document.getElementById("add-product + num");
+        var removeBtn = document.getElementById("delete-latest-product + num");
+        addBtn.style.display = "block";
+        removeBtn.style.display = "none";
+    }
+</script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="scripts/script.js"></script>

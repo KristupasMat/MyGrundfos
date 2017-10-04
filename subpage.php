@@ -54,7 +54,7 @@
                             <label for="selectAll">Select all</label>
                         </div>
                     </form>
-                    <p>Donwload size: <span id="sub1Count">0</span> mb</p>
+                    <p>Download size: <span id="sub1Count">0</span> mb</p>
                     <button class="downloadFiles btn secondary-btn"><span>download</span></button>
                 </div>
                 <div class="emailMe">
