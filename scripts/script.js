@@ -246,12 +246,12 @@ function closeNotification(e) {
     var notification = document.getElementById("notification");
     notification.style.display = "none";
 }
+var updateTag = document.getElementById('product1-tag');
+var link = document.getElementById("product1-link");
 
-var updateTag = document.getElementById('#product1-tag');
-var link = document.getElementById("#product1-link");
-link.onclick = function() {
-    updateTag.style.display = "none";
-    localStorage.setItem('updateTag', "none");
+link.onchange = function() {
+    updateTag.style.display = 'none';
+    localStorage.setItem('updateTag', 'none');
 };
-updateTag.style.display = localStorage.getItem('updateTag');
-updateTag.onclick();
+updateTag.display = localStorage.getItem('updateTag');
+link.onchange(); 
