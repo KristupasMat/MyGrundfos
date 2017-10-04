@@ -89,6 +89,11 @@ $(document).ready(function(){
         remove.style.display = "none";
     });
 
+    $( "#delete-favorite-product4" ).click(function() {
+        var product4 = document.getElementById("product4");
+        product4.style.display = "none";
+    });
+
     //Drag and drop sorting for products
     $( function() {
         $( ".favorite-row" ).sortable();
