@@ -80,8 +80,8 @@ $(document).ready(function(){
     });
 
     $( "#delete-favorite-product4" ).click(function() {
-        var product4 = document.getElementById("product4");
-        product4.style.display = "none";
+        var remove = document.getElementById("product4");
+        remove.style.display = "none";
     });
 
     //Drag and drop sorting for products
@@ -90,60 +90,8 @@ $(document).ready(function(){
         $( ".favorite-row" ).disableSelection();
     });
 
-    // Moves  first product from last bought to favourites and replaces add button with remove button
-    $( "#add-product1" ).click(function() {
-        jQuery("#latest-product1").detach().appendTo('.favorite-row');
-        var addBtn = document.getElementById("add-product1");
-        var removeBtn = document.getElementById("delete-latest-product1");
-        addBtn.style.display = "none";
-        removeBtn.style.display = "block";
-    });
 
-    // Moves first product from favourites to last bought and replaces remove button with add button
-    $( "#delete-latest-product1" ).click(function() {
-        jQuery("#latest-product1").detach().appendTo('.latest-purchases');
-        var addBtn = document.getElementById("add-product1");
-        var removeBtn = document.getElementById("delete-latest-product1");
-        addBtn.style.display = "block";
-        removeBtn.style.display = "none";
-    });
-
-    // Moves secondx` product from last bought to favourites and replaces add button with remove button
-    $( "#add-product2" ).click(function() {
-        jQuery("#latest-product2").detach().appendTo('.favorite-row');
-        var addBtn = document.getElementById("add-product2");
-        var removeBtn = document.getElementById("delete-latest-product2");
-        addBtn.style.display = "none";
-        removeBtn.style.display = "block";
-    });
-
-    // Moves secondx` product from favourites to last bought and replaces remove button with add button
-    $( "#delete-latest-product2" ).click(function() {
-        jQuery("#latest-product2").detach().appendTo('.latest-purchases');
-        var addBtn = document.getElementById("add-product2");
-        var removeBtn = document.getElementById("delete-latest-product2");
-        addBtn.style.display = "block";
-        removeBtn.style.display = "none";
-    });
-
-    // Moves  third product from last bought to favourites and replaces add button with remove button
-    $( "#add-product3" ).click(function() {
-        jQuery("#latest-product3").detach().appendTo('.favorite-row');
-        var addBtn = document.getElementById("add-product3");
-        var removeBtn = document.getElementById("delete-latest-product3");
-        addBtn.style.display = "none";
-        removeBtn.style.display = "block";
-    });
-
-    // Moves third product from favourites to last bought and replaces remove button with add button
-    $( "#delete-latest-product3" ).click(function() {
-        jQuery("#latest-product3").detach().appendTo('.latest-purchases');
-        var addBtn = document.getElementById("add-product3");
-        var removeBtn = document.getElementById("delete-latest-product3");
-        addBtn.style.display = "block";
-        removeBtn.style.display = "none";
-    });
-
+    //Autocomplete function
     $( function() {
         var availableTags = [
             "ALPHA 1",
@@ -186,6 +134,7 @@ function showMore2(){
 }
 keyButton.addEventListener('click', showMore);
 imgDrop.addEventListener("click", showMore2);
+
 // Bring up the popup and overlay when download button is clicked
 function openPopup() {
     var popup = document.getElementById("popup");
@@ -208,16 +157,42 @@ function redirectSearch() {
     if(searchRequest == "ALPHA 1") {
         window.location.href = "subpage.php";
     } else if(searchRequest == "ALPHA 2") {
-        window.location.href = "subpage2.php";
+        window.location.href = "subpage.php";
     } else if(searchRequest == "ALPHA 3") {
-        window.location.href = "subpage3.php";
+        window.location.href = "subpage.php";
+    } else if(searchRequest == "MAGNA1") {
+        window.location.href = "subpage.php";
+    } else if(searchRequest == "ALPHA1 L") {
+        window.location.href = "subpage.php";
+    } else if(searchRequest == "CMBE") {
+        window.location.href = "subpage.php";
+    } else if(searchRequest == "CMB-PM1") {
+        window.location.href = "subpage.php";
     };
 }
+
+//Function for moving products from latest section to favourites sections
+function moveProduct(productClassName) {
+    var btnType = productClassName.charAt(8);
+    var num = productClassName.charAt(7);
+    if(btnType === "a") {
+        jQuery("#latest-product" + num).detach().appendTo('.favorite-row');
+        var addBtn = document.getElementById("add-product" + num);
+        var removeBtn = document.getElementById("delete-latest-product" + num);   
+        addBtn.style.display = "none";
+        removeBtn.style.display = "block";
+    } else {
+        jQuery("#latest-product" + num).detach().appendTo('.latest-purchases');
+        var addBtn = document.getElementById("add-product" + num);
+        var removeBtn = document.getElementById("delete-latest-product" + num);
+        addBtn.style.display = "block";
+        removeBtn.style.display = "none";
+    }
+};
 
 // Adds products when using add product search bar
 function addProduct() {
     var searchRequest = document.getElementById("add-product").value;
-    var product4 = document.getElementById("product4");
     if(searchRequest == "ALPHA1 L") {
         jQuery("#latest-product1").detach().appendTo('.favorite-row');
         var addBtn = document.getElementById("add-product1");
@@ -237,13 +212,18 @@ function addProduct() {
         addBtn.style.display = "none";
         removeBtn.style.display = "block";
     } else if(searchRequest == "MAGNA1") {
+        var product4 = document.getElementById("product4");
         product4.style.display = "block";
+    }  else if(searchRequest == "ALPHA 1") {
+        var product1 = document.getElementById("product1");
+        product1.style.display = "block";
+    } else if(searchRequest == "ALPHA 2") {
+        var product2 = document.getElementById("product2");
+        product2.style.display = "block";
+    } else if(searchRequest == "ALPHA 3") {
+        var product3 = document.getElementById("product3");
+        product3.style.display = "block";
     };
-}
-
-function closeNotification(e) {
-    var notification = document.getElementById("notification");
-    notification.style.display = "none";
 }
 
 //Bring up the notification after few seconds
@@ -252,4 +232,9 @@ setTimeout(function(){
         notification.style.display ="block";
     }, 5000);
 
+//Closes the notification when X is clicked
+function closeNotification(e) {
+    var notification = document.getElementById("notification");
+    notification.style.display = "none";
+}
 
