@@ -59,14 +59,14 @@
                 <div class="latest-purchases">
                     <div class="product" id="latest-product1">
                         <div class="product-box">
-                            <a href="subpage4.php"><img src="img/Alpha1L.jpg" width="auto" height="160px"></a>
+                            <a href="subpage.php"><img src="img/Alpha1L.jpg" width="auto" height="160px"></a>
                             <div class="updated-tag">
                                 UPDATED
                             </div>
-                            <button class="add-favorite-btn functional-btn" id="add-product1" onclick="moveProduct(this.id)">
+                            <button class="product1add add-favorite-btn functional-btn" id="add-product1" onclick="moveProduct(this.className)">
                                 <img src="./img/favorite-icon.svg">
                             </button>
-                            <button class="remove-btn functional-btn" id="delete-latest-product1">
+                            <button class="product1 remove-btn functional-btn" id="delete-latest-product1" onclick="moveProduct(this.className)">
                                 <img src="./img/delete-icon.svg">	
                             </button>
                         </div>
@@ -75,14 +75,14 @@
                     </div>
                     <div class="product" id="latest-product2">
                         <div class="product-box">
-                            <a href="subpage5.php"><img src="img/CMBE.jpg" width="auto" height="160px"></a>
+                            <a href="subpage.php"><img src="img/CMBE.jpg" width="auto" height="160px"></a>
                             <div class="updated-tag">
                                 UPDATED
                             </div>
-                            <button class="add-favorite-btn functional-btn" id="add-product2">
+                            <button class="product2add add-favorite-btn functional-btn" id="add-product2" onclick="moveProduct(this.className)">
                                 <img src="./img/favorite-icon.svg">
                             </button>
-                            <button class="remove-btn functional-btn" id="delete-latest-product2">
+                            <button class="product2 remove-btn functional-btn" id="delete-latest-product2" onclick="moveProduct(this.className)">
                                 <img src="./img/delete-icon.svg">	
                             </button>
                         </div>
@@ -91,11 +91,11 @@
                     </div>
                     <div class="product" id="latest-product3">
                         <div class="product-box">
-                            <a href="subpage6.php"><img src="img/CMB-PM1.jpg" width="auto" height="160px"></a>
-                            <button class="add-favorite-btn functional-btn" id="add-product3">
+                            <a href="subpage.php"><img src="img/CMB-PM1.jpg" width="auto" height="160px"></a>
+                            <button class="product3add add-favorite-btn functional-btn" id="add-product3" onclick="moveProduct(this.className)">
                                 <img src="./img/favorite-icon.svg">	
                             </button>
-                            <button class="remove-btn functional-btn" id="delete-latest-product3">
+                            <button class="product3 remove-btn functional-btn" id="delete-latest-product3" onclick="moveProduct(this.className)">
                                 <img src="./img/delete-icon.svg">
                             </button>
                             <p class="pump-name">CMB-PM1</p>
@@ -130,7 +130,7 @@
                     </div>
                     <div class="favorite" id="product2">
                         <div class="favorite-box">
-                            <a href="subpage2.php"><img src="img/alpha2.jpg" width="auto" height="160px"></a>
+                            <a href="subpage.php"><img src="img/alpha2.jpg" width="auto" height="160px"></a>
                             <div class="updated-tag">
                                 UPDATED
                             </div>
@@ -143,7 +143,7 @@
                     </div>
                     <div class="favorite" id="product3">
                         <div class="favorite-box">
-                            <a href="subpage3.php"><img src="img/alpha3.jpg" width="auto" height="160px"></a>
+                            <a href="subpage.php"><img src="img/alpha3.jpg" width="auto" height="160px"></a>
                             <button class="remove-btn functional-btn" id="delete-favorite-product3">
                                 <img src="./img/delete-icon.svg">	
                             </button>
@@ -153,7 +153,7 @@
                     </div>
                     <div class="favorite" id="product4">
                         <div class="favorite-box">
-                            <a href="subpage4.php"><img src="img/Magna1.png" width="auto" height="160px"></a>
+                            <a href="subpage.php"><img src="img/Magna1.png" width="auto" height="160px"></a>
                             <button class="remove-btn functional-btn" id="delete-favorite-product4">
                                 <img src="./img/delete-icon.svg">	
                             </button>

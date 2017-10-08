@@ -57,8 +57,8 @@ div.imgBackground {
 }
 img#alpha1 {
     width: 70%;
-    justify-self: center;
     align-self: center;
+    justify-self: center;
 }
 section.information {
     background-color: #dedede;
@@ -136,7 +136,6 @@ div.downloadMM p {
 /* button styles */
 button.downloadFiles {
     width: 100%;
-    justify-self: center;
 }
 button.downloadFiles span{
     color: #ffffff;
@@ -165,8 +164,7 @@ div.emailInput input {
 div.addFav {
     padding: 20px;
     background-color: #f5f5f5;
-    border-top: 1px solid #d6d6d6; */
-    border-bottom:;
+    border-top: 1px solid #d6d6d6;
 }
 div.addFav div{
     background-color:#333333;
@@ -179,9 +177,6 @@ div.addFav p {
     margin-left: 10px;
     color:#ffffff;
     text-transform: uppercase;
-}
-div.addFav img {
-    justify-self: end;
 }
 /* Other styles ---- GUYS! Comments please! */
 
@@ -272,7 +267,7 @@ div.addFav img {
     font-weight: bold;
     letter-spacing: 1px;
     text-align: center;
-    vertical-align: middle;f
+    vertical-align: middle;
     cursor: pointer;
     color: white;
     background-color: #3386c3;
@@ -529,7 +524,6 @@ section.component-pagetitle h1 {
 
 .links {
     display: block;
-    border-top-style: outset;
     padding-bottom: 10px;
     padding-top: 10px;
     border-top: solid 1px #c9c9c9;
